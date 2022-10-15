@@ -122,7 +122,7 @@ metaitem.shape.extruder.pipe.tiny.name=模头(微型管道)
 metaitem.shape.extruder.pipe.tiny.tooltip=用来制作微型管道的模头
 metaitem.shape.extruder.pipe.small.name=模头(小型管道)
 metaitem.shape.extruder.pipe.small.tooltip=用来制作小型管道的模头
-metaitem.shape.extruder.pipe.medium.name=模头(管道)
+metaitem.shape.extruder.pipe.medium.name=模头(中型管道)
 metaitem.shape.extruder.pipe.medium.tooltip=用来制作管道的模头
 metaitem.shape.extruder.pipe.large.name=模头(大型管道)
 metaitem.shape.extruder.pipe.large.tooltip=用来制作大型管道的模头
@@ -301,15 +301,15 @@ metaitem.conveyor.module.mv.tooltip=每 5 秒传输 1 组物品(作覆盖板时)
 metaitem.conveyor.module.hv.name=传送带(HV)
 metaitem.conveyor.module.hv.tooltip=每 1 秒传输 1 组物品(作覆盖板时)
 metaitem.conveyor.module.ev.name=传送带(EV)
-metaitem.conveyor.module.ev.tooltip=每 1/5 秒传输 1 组物品(作覆盖板时)
+metaitem.conveyor.module.ev.tooltip=每 1/4 秒传输 1 组物品(作覆盖板时)
 metaitem.conveyor.module.iv.name=传送带(IV)
-metaitem.conveyor.module.iv.tooltip=每 1/20 秒传输 1 组物品(作覆盖板时)
+metaitem.conveyor.module.iv.tooltip=每 1/6 秒传输 1 组物品(作覆盖板时)
 metaitem.conveyor.module.luv.name=传送带(LuV)
-metaitem.conveyor.module.luv.tooltip=每 1/20 秒传输 1 组物品(作覆盖板时)
+metaitem.conveyor.module.luv.tooltip=每 1/8 秒传输 1 组物品(作覆盖板时)
 metaitem.conveyor.module.zpm.name=传送带(ZPM)
-metaitem.conveyor.module.zpm.tooltip=每 1/20 秒传输 1 组物品(作覆盖板时)
+metaitem.conveyor.module.zpm.tooltip=每 1/10 秒传输 1 组物品(作覆盖板时)
 metaitem.conveyor.module.uv.name=传送带(UV)
-metaitem.conveyor.module.uv.tooltip=每 1/20 秒传输 1 组物品(作覆盖板时)
+metaitem.conveyor.module.uv.tooltip=每 1/12 秒传输 1 组物品(作覆盖板时)
 
 metaitem.electric.piston.lv.name=电力活塞(LV)
 metaitem.electric.piston.mv.name=电力活塞(MV)
@@ -496,8 +496,6 @@ metaitem.fluid_filter.tooltip=过滤流体的输入/输出(作覆盖板时)/n亦
 
 metaitem.cover.controller.name=机器控制覆盖板
 metaitem.cover.controller.tooltip=开启/关闭你的机器
-metaitem.cover.activity.detector.name=设备活跃探测覆盖板
-metaitem.cover.activity.detector.tooltip=按机器加工进度发出红石信号
 metaitem.cover.fluid.detector.name=流体探测覆盖板
 metaitem.cover.fluid.detector.tooltip=按流体储量发出红石信号
 metaitem.cover.item.detector.name=物品探测覆盖板
@@ -516,10 +514,38 @@ metaitem.cover.shutter.tooltip=阻塞本侧的物品/流体缓存. 与机器控�
 
 metaitem.cover.solar.panel.name=太阳能覆盖板
 metaitem.cover.solar.panel.tooltip=愿太阳常伴你身边
+metaitem.cover.solar.panel.lv.tooltip=低压太阳能板
 metaitem.cover.solar.panel.ulv.name=太阳能覆盖板(8V)
 metaitem.cover.solar.panel.ulv.tooltip=8V 太阳能覆盖板
 metaitem.cover.solar.panel.lv.name=太阳能覆盖板(LV)
-metaitem.cover.solar.panel.lv.tooltip=LV 太阳能覆盖板
+metaitem.cover.solar.panel.mv.name=太阳能覆盖板(MV)
+metaitem.cover.solar.panel.hv.name=太阳能覆盖板(HV)
+metaitem.cover.solar.panel.ev.name=太阳能覆盖板(EV)
+metaitem.cover.solar.panel.iv.name=太阳能覆盖板(IV)
+metaitem.cover.solar.panel.luv.name=太阳能覆盖板(LuV)
+metaitem.cover.solar.panel.zpm.name=太阳能覆盖板(ZPM)
+metaitem.cover.solar.panel.uv.name=太阳能覆盖板(UV)
+metaitem.cover.solar.panel.max.name=超级太阳能覆盖板(MAX)
+
+metaitem.cover.activity.detector.name=设备活跃探测覆盖板
+metaitem.cover.activity.detector.tooltip=将活跃状态转换为红石信号，通过覆盖板发送。
+metaitem.cover.activity.detector.advanced.name=高级设备活跃探测覆盖板
+metaitem.cover.activity.detector_advanced.tooltip=将处理状态转换为红石信号，通过覆盖板发送。
+
+gregtech.cover.energy_detector.message_electricity_storage_normal=检测默认电量存储
+gregtech.cover.energy_detector.message_electricity_storage_inverted=倒置检测电量存储
+
+gregtech.cover.fluid_detector.message_fluid_storage_normal=检测默认流体存储
+gregtech.cover.fluid_detector.message_fluid_storage_inverted=倒置检测流体存储
+
+gregtech.cover.item_detector.message_item_storage_normal=检测默认物品存储
+gregtech.cover.item_detector.message_item_storage_inverted=倒置检测物品存储
+
+gregtech.cover.activity_detector.message_activity_normal=检测默认活跃状态
+gregtech.cover.activity_detector.message_activity_inverted=倒置检测活跃状态
+
+gregtech.cover.activity_detector_advanced.message_activity_normal=检测默认处理状态
+gregtech.cover.activity_detector_advanced.message_activity_inverted=倒置检测处理状态
 
 metaitem.tool.cheat.name=调试扫描仪
 metaitem.tool.cheat.tooltip=同样也是一个无限的能量源
@@ -652,6 +678,7 @@ metaitem.tool.tooltip.mining_speed=挖掘速度: %d
 metaitem.tool.tooltip.durability=耐久度: %d/%d
 metaitem.tool.tooltip.rotor.efficiency=转子效率: %d%%
 metaitem.tool.tooltip.hammer.extra_drop=有50%的几率多掉落1个粉碎的矿石
+metaitem.tool.tooltip.hammer.structure.check=右键可检查多方块结构
 
 cover.ore_dictionary_filter.title=矿物辞典过滤
 cover.ore_dictionary_filter.title1=矿辞名
@@ -1577,7 +1604,7 @@ behaviour.lighter.uses=剩余次数: %d
 behavior.plunger.description=右键机器以清除1000升流体输出./nShift+右键机器以清除1000升流体输入./n仅限清除GTCE机器的流体输入!
 
 enchantment.damage.endermen=末影离析
-enchantment.damage.radioactivity=辐射
+enchantment.damage.hard.hammer=粉碎
 
 tile.gt.foam.name=建筑泡沫
 tile.gt.reinforced_foam.name=强化建筑泡沫
@@ -1683,6 +1710,7 @@ tile.turbine_casing.tungstensteel_turbine_casing.name=钨钢涡轮机械方块
 
 # Multiblock casing blocks
 tile.multiblock_casing.engine_intake.name=引擎进气口机械方块
+tile.multiblock_casing.extreme_engine_intake.name=进阶引擎进气口机械方块
 tile.multiblock_casing.grate.name=栅格机械方块
 tile.multiblock_casing.assembler.name=装配线外壳
 tile.multiblock_casing.fusion.name=聚变机械方块
@@ -2184,19 +2212,27 @@ gregtech.machine.quantum_chest.tooltip=比JABBA好
 gregtech.machine.quantum_chest.capacity=物品储量: %d 个
 gregtech.machine.quantum_chest.items_stored=现存物品数量:
 
-gregtech.machine.quantum_chest.mv.name=基础量子箱
-gregtech.machine.quantum_chest.hv.name=进阶量子箱
-gregtech.machine.quantum_chest.ev.name=进阶量子箱 II
-gregtech.machine.quantum_chest.iv.name=黑洞量子箱 III
+gregtech.machine.quantum_chestlv.name=超级箱 I
+gregtech.machine.quantum_chest.mv.name=超级箱 II
+gregtech.machine.quantum_chest.hv.name=超级箱 III
+gregtech.machine.quantum_chest.ev.name=超级箱 IV
+gregtech.machine.quantum_chest.iv.name=量子箱 I
+gregtech.machine.quantum_chestluv.name=量子箱 II
+gregtech.machine.quantum_chestzpm.name=量子箱 III
+gregtech.machine.quantum_chestuv.name=量子箱 IV
 
 #Quantum tanks
 gregtech.machine.quantum_tank.tooltip=储存你全部流体的简洁渠道
 gregtech.machine.quantum_tank.capacity=流体储量: %d 升
 
-gregtech.machine.quantum_tank.mv.name=基础量子缸
-gregtech.machine.quantum_tank.hv.name=进阶量子缸
-gregtech.machine.quantum_tank.ev.name=进阶量子缸 II
-gregtech.machine.quantum_tank.iv.name=黑洞量子缸 III
+gregtech.machine.quantum_tanklv.name=超级缸 I
+gregtech.machine.quantum_tank.mv.name=超级缸 II
+gregtech.machine.quantum_tank.hv.name=超级缸 III
+gregtech.machine.quantum_tank.ev.name=超级缸 IV
+gregtech.machine.quantum_tank.iv.name=量子缸 I
+gregtech.machine.quantum_tankluv.name=量子缸 II
+gregtech.machine.quantum_tankzpm.name=量子缸 III
+gregtech.machine.quantum_tankuv.name=量子缸 IV
 
 #Air Collectors
 gregtech.machine.air_collector.lv.name=基础空气收集器
@@ -2659,33 +2695,36 @@ behaviour.paintspray.uses=剩余次数: %d 次
 behaviour.prospecting=适用于探矿
 
 # Multiblock machine controllers
-gregtech.machine.primitive_blast_furnace.bronze.name=土高炉
-gregtech.machine.electric_blast_furnace.name=工业高炉
-gregtech.machine.vacuum_freezer.name=真空冷冻机
-gregtech.machine.implosion_compressor.name=聚爆压缩机
-gregtech.machine.pyrolyse_oven.name=热解炉
-gregtech.machine.distillation_tower.name=蒸馏塔
-gregtech.machine.multi_furnace.name=工业熔炉
-gregtech.machine.cracker.name=石油裂化机
-gregtech.machine.coke_oven.name=焦炉
-gregtech.machine.coke_oven_hatch.name=焦炉仓
+gregtech.machine.primitive_blast_furnace.bronze.name=土高炉 (PBF)
+gregtech.machine.electric_blast_furnace.name=工业高炉 (EBF)
+gregtech.machine.vacuum_freezer.name=真空冷冻机 (VF)
+gregtech.machine.implosion_compressor.name=聚爆压缩机 (IC)
+gregtech.machine.pyrolyse_oven.name=热解炉 (PO)
+gregtech.machine.distillation_tower.name=蒸馏塔 (DT)
+gregtech.machine.multi_furnace.name=工业熔炉 (MS)
+gregtech.machine.cracker.name=石油裂化机 (CU)
+gregtech.machine.coke_oven.name=焦炉 (CO)
+gregtech.machine.coke_oven_hatch.name=焦炉仓 (COH)
 gregtech.machine.coke_oven_hatch.tooltip=可允许自动化访问焦炉. 必须放置在每面的正中位置.
 
-gregtech.machine.diesel_engine.name=内燃机
-gregtech.machine.large_turbine.steam.name=大型蒸汽涡轮
-gregtech.machine.large_turbine.gas.name=大型燃气涡轮
-gregtech.machine.large_turbine.plasma.name=大型等离子体涡轮
+gregtech.machine.diesel_engine.name=内燃机 (DE)
+gregtech.machine.large_turbine.steam.name=大型蒸汽涡轮 (LST)
+gregtech.machine.large_turbine.gas.name=大型燃气涡轮 (LGT)
+gregtech.machine.large_turbine.plasma.name=大型等离子体涡轮 (LPT)
 
-gregtech.machine.large_boiler.bronze.name=大型青铜锅炉
-gregtech.machine.large_boiler.steel.name=大型钢锅炉
-gregtech.machine.large_boiler.titanium.name=大型钛锅炉
-gregtech.machine.large_boiler.tungstensteel.name=大型钨钢锅炉
+gregtech.machine.large_boiler.bronze.name=大型青铜锅炉 (LBB)
+gregtech.machine.large_boiler.steel.name=大型钢锅炉 (LSB)
+gregtech.machine.large_boiler.titanium.name=大型钛锅炉 (LTB)
+gregtech.machine.large_boiler.tungstensteel.name=大型钨钢锅炉 (LTSB)
 
 # Multiblock Tooltips
 gregtech.machine.primitive_blast_furnace.bronze.tooltip=结构: 3x3x4 (WxLxH) 整个结构由耐火砖组成(总共 32 块)./n第一层是一个 3x3 正方形./n第二三四层中间没有方块./n土高炉方块位于第二层任意一侧的中间./n没有高炉主体的侧面可以共享. 
 
 # Multiblock machine parts
 gregtech.machine.item_bus.import.tooltip=为多方块结构输入物品
+
+gregtech.universal.disabled=多方块共享部件: §4禁用
+gregtech.universal.enabled=多方块共享部件: §a启用
 
 gregtech.machine.item_bus.import.ulv.name=输入总线(ULV)
 gregtech.machine.item_bus.import.lv.name=输入总线(LV)
@@ -2710,6 +2749,8 @@ gregtech.machine.item_bus.export.luv.name=输出总线(LuV)
 gregtech.machine.item_bus.export.zpm.name=输出总线(ZPM)
 gregtech.machine.item_bus.export.uv.name=输出总线(UV)
 gregtech.machine.item_bus.export.max.name=输出总线(MAX)
+
+gregtech.bus.collapse=允许总线合并物品堆叠%s
 
 gregtech.machine.fluid_hatch.import.tooltip=为多方块结构输入流体
 
@@ -2859,6 +2900,7 @@ gregtech.multiblock.turbine.rotor_speed=转子转速: %s / %s 转/分
 gregtech.multiblock.turbine.rotor_efficiency=转子效率: %s%%
 gregtech.multiblock.turbine.rotor_durability=转子耐久度: %s%%
 gregtech.multiblock.turbine.low_rotor_durability=警告: 转子耐久度低于%s%% (%s%%)
+gregtech.multiblock.turbine.obstructed=涡轮机工作面被阻挡！
 
 gregtech.multiblock.large_boiler.temperature=温度: %s / %s 摄氏度
 gregtech.multiblock.large_boiler.steam_output=蒸汽输出: %s 升/刻
